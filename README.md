@@ -11,6 +11,7 @@ In this part of the analysis, we ran a multiple linear regression on the variabl
 ## Summary Statistics on Suspension Coils
 
 ![total_summary](images/total_summary.png)
+
 ![lot_summary](images/lot_summary.png)
 
 In this portion of the analysis, we looked at the summary statistics regarding the PSI of suspension coils. Looking at the entirity of the data, we saw that variance was a bit high at 62.3 but within our threshold of a variance of 100. However, we wanted to see if this was the case over all three manufacturing lots or if this variance was skewed in any way. Looking at the summary statistics broken down by manufacturing lots, we could conclude that both Lot1 and Lot2 had small amounts of variance at 0.98 ad 7.47 respectively. However, we could see that Lot3 was producing suspension coils outside of the threshold at a variance of 170.29 and a standard deviation of 13.05. It would be advantageous to compare the manufacturing practices and material sources between the lots to determine the source of this variance so it can be corrected.
@@ -42,3 +43,5 @@ When running the t-test on Lot2, the p-value is .61 which is well within our sta
 
 As we suspected, Lot3 drove the total p-value down with their standalone p-value of .042. This suggests that the variance cannot be blamed on random chance and there is something that is causing a drastic difference between the PSI values at this plant and the values of the population's
 
+## Study Design: MechaCar vs Competition
+Our team would like to test the marketability of MechaCar versus it's competition by comparing units sold among cars similarly priced. To increase marketability, we would like to see if an increase fuel efficiency and a decrease maintenace cost would have an effect on units sold. The null hypothesis would be that the units sold would be comparable to the competitors' sales if the MechaCar was more fuel efficient and cost less to maintain over time. To test this hypothesis, we would need a large sampling of cars at a similar price point. We would then like to set up line regretions to see if there were any correlation between units sold, fuel efficiency and maintenance cost. We would do this to see if there would be any value persuing this further. If determined that changing these variables could increase marketability, we could then set up our t-test vs the entire population or select competitors using our most viable projects of hieghest fuel efficiency and lowest maintenance cost feesable. 
